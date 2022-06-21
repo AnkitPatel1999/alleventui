@@ -1,7 +1,7 @@
 
-Used Technologies
-PHP - (version 8.1.6) and MySQL for backend
-ReactJS - (version 18.2.0) and Bootstrap - (version 5.1.3) for Frontend
+Used Technologies <br />
+PHP - (version 8.1.6) and MySQL for backend<br />
+ReactJS - (version 18.2.0) and Bootstrap - (version 5.1.3) for Frontend<br />
 
 Steps to start ReactJS project
 1. Clone Github Repository
