@@ -3,45 +3,45 @@ Used Technologies <br />
 PHP - (version 8.1.6) and MySQL for backend<br />
 ReactJS - (version 18.2.0) and Bootstrap - (version 5.1.3) for Frontend<br />
 
-Steps to start ReactJS project
-1. Clone Github Repository
-	command: git clone https://github.com/AnkitPatel1999/alleventui.git
+Steps to start ReactJS project<br />
+1. Clone Github Repository<br />
+	command: git clone https://github.com/AnkitPatel1999/alleventui.git<br />
 
-2. Install Libraries
-	command: npm install
+2. Install Libraries<br />
+	command: npm install<br />
 
-3. Run Project
-	command: npm start
-
-
-Steps to arrange API Files
-
-1. Clone Github Repository in xampp\htdocs Directory
-	command: https://github.com/AnkitPatel1999/alleventsapi.git
-
-2. Install Google API library
-	command: composer require google/apiclient
+3. Run Project<br />
+	command: npm start<br />
 
 
-Now you can Test 
+Steps to arrange API Files<br />
 
-FrontEnd URL 
- Home page: https://localhost:3000/
- Create Event Page : https://localhost:3000/create-event
- Login Page: https://localhost:3000/signin
+1. Clone Github Repository in xampp\htdocs Directory<br />
+	command: https://github.com/AnkitPatel1999/alleventsapi.git<br />
 
-Bakend API
- Listing all event API: http://localhost/alleventapi/api/event/events.php
- Create Event API: http://localhost/alleventapi/api/event/createEvent.php
- Login API: http://localhost/alleventapi/api/user/login.php
+2. Install Google API library<br />
+	command: composer require google/apiclient<br />
 
-Database Configaration
-    Host = 'localhost'
-    Database Name = 'alleventsoop'
-    Username = 'root'
-    Password = '123456'
 
-Table structure for table `events`
+Now you can Test <br />
+
+FrontEnd URL <br />
+ Home page: https://localhost:3000/<br />
+ Create Event Page : https://localhost:3000/create-event<br />
+ Login Page: https://localhost:3000/signin<br />
+
+Bakend API<br />
+ Listing all event API: http://localhost/alleventapi/api/event/events.php<br />
+ Create Event API: http://localhost/alleventapi/api/event/createEvent.php<br />
+ Login API: http://localhost/alleventapi/api/user/login.php<br />
+
+Database Configaration<br />
+    Host = 'localhost'<br />
+    Database Name = 'alleventsoop'<br />
+    Username = 'root'<br />
+    Password = '123456'<br />
+
+Table structure for table `events`<br />
 
 CREATE TABLE `events` (
   `eventId` int(11) NOT NULL AUTO_INCREMENT,
@@ -56,8 +56,8 @@ CREATE TABLE `events` (
   `location` text NOT NULL,
   `description` text NOT NULL
 ) 
-
-Table structure for table `users`
+<br />
+Table structure for table `users`<br />
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
