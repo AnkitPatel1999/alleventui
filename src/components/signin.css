@@ -1,0 +1,89 @@
+.header {
+  padding: 10px;
+  font-weight: 700;
+  color: coral;
+  border-bottom: 1px darkgray solid;
+  display: flex;
+  justify-content: space-between;
+}
+.h_title {
+  align-self: center;
+  font-size: larger;
+}
+
+.h_pic {
+  display: flex;
+  align-items: center;
+}
+
+.h_pic img {
+  border-radius: 50%;
+  margin-left: 5px;
+  width: 10%;
+}
+
+.h_pic p {
+  margin-top: unset;
+  margin-bottom: unset;
+}
+
+a {
+  white-space: nowrap;
+  color: indigo;
+  text-decoration: none;
+}
+
+.createEventContainer {
+  width: 50%;
+  margin: 1px auto;
+}
+.createEventBtn {
+  background: #1f2046;
+  color: #fff;
+}
+
+label {
+  font-weight: 600;
+}
+
+.cardRow {
+  margin: 0 100px;
+}
+
+.cardImg {
+  width: 300px;
+  height: 200px;
+  align-self: center;
+  margin: 10px;
+}
+
+.card-body {
+  height: 330px;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+.card-text {
+  border-top: 1px solid gray;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.menu {
+  display: flex;
+}
+.menu a {
+  margin: 0 5px;
+}
+
+.datalist {
+  display: block;
+}
+
+.filter {
+  place-self: center;
+  font-weight: 600;
+  border-bottom: 3px red solid;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0 10px;
+}
