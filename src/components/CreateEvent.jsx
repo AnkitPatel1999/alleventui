@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -115,6 +115,7 @@ const CreateEvent = () => {
             className="form-control input-sm"
             type="file"
             onChange={onFileChange}
+            accept="image/png, image/gif, image/jpeg"
           />
           <p className="text-warning">{errors.bannerPicture?.message}</p>
         </div>

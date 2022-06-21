@@ -212,7 +212,7 @@ function Events() {
             <div key={key} className="col-sm-4 mt-4">
               <div className="card">
                 <div className="cardImg">
-                  <img className="card-img-top" src={data.bannerPicture} />
+                  <img className="card-img-top" src={data.bannerPicture} alt="banner" />
                 </div>
                 <div className="card-body">
                   <h5 className="card-title">{data.eventName}</h5>

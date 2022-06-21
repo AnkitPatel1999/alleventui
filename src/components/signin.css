@@ -70,6 +70,7 @@ label {
 
 .menu {
   display: flex;
+  margin-right: 10px;
 }
 .menu a {
   margin: 0 5px;

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useGoogleLogin, googleLogout } from "@react-oauth/google";
+import React, { useState } from "react";
+import { useGoogleLogin } from "@react-oauth/google";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Header from "./Header";
@@ -14,13 +14,15 @@ function SignIn() {
       const access_token = res.access_token;
       console.log(access_token);
 
-      const d = await axios
+      await axios
         .post("http://localhost/alleventapi/api/user/login.php", res)
         .then(res => {
           console.log(res);
           setUser({ name: res.data.name, picture: res.data.picture });
-          // navigate("/")
+          sessionStorage.setItem("name", res.data.name);
+          sessionStorage.setItem("picture", res.data.picture);
           alert("Login successfully")
+          navigate("/")
         })
         .catch(error => {
           console.log(error);
@@ -28,9 +30,9 @@ function SignIn() {
     }
   });
 
-  const logOut = () => {
-    console.log(googleLogout());
-  };
+  // const logOut = () => {
+  //   console.log(googleLogout());
+  // };
   return (
     <div>
       <Header user={user} />
